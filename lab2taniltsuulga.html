@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="mn">
+    <head>
+        <title>Lab1 CV</title>
+    </head>
+    <body bgcolor="White"></body>
+    <h1><em><center>Хувийн мэдээлэл</center></em></h1>
+    <hr>
+    <center><img src="logo.png" alt="Миний зураг"></center>
+    <center><a href="example.mn" target="_blank">Холбоос</a></center>
+ 
+    <fieldset>
+      <legend>Хувийн мэдээлэл</legend>
+
+      <label for="surname">Овог:</label>
+      <input type="text" id="surname" surname="surname" placeholder="Овогоо оруулна уу" required minlength="2"
+      title="Овогоо оруулна уу.">
+ 
+      <label for="name">Нэр:</label>
+      <input type="text" id="name" name="name" placeholder="Нэрээ оруулна уу" required minlength="2"
+      title="Нэрээ бичнэ үү.">
+ 
+      <label for="email">Имэйл:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required
+      title="Мэйл хаягаа бичнэ үү.">
+
+      <label for="password">Нууц үг:</label>
+      <input type="password" id="password" name="password" placeholder="Дор хаяж 8 тэмдэгт"
+             required minlength="8" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}"
+             title="Нууц үг дор хаяж 8 тэмдэгттэй, үсэг болон тоо агуулсан байх ёстой">
+ 
+      <label for="birthdate">Төрсөн огноо:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </fieldset>
+ 
+    <fieldset>
+      <legend>Хүйс</legend>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Эрэгтэй</label>
+ 
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Эмэгтэй</label>
+ 
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Бусад</label>
+      </div>
+    </fieldset>
+ 
+    <fieldset>
+      <legend>Сонирхол</legend>
+      <div class="checkbox-group">
+        <input type="checkbox" id="sport" name="interests" value="sport">
+        <label for="sport">Спорт</label>
+ 
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Хөгжим</label>
+ 
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Ном унших</label>
+ 
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Аялал</label>
+
+        <input type="checkbox" id="other" name"interests" value="other">
+        <label for="other">Бусад</label>
+      </div>
+    </fieldset>
+ 
+    <fieldset>
+      <legend>Нэмэлт мэдээлэл</legend>
+      <label for="city">Хот/Аймаг:</label>
+      <select id="city" name="city" required>
+        <option value="">-- Сонгоно уу --</option>
+        <option value="ulaanbaatar">Улаанбаатар</option>
+        <option value="darkhan">Дархан</option>
+        <option value="erdenet">Эрдэнэт</option>
+        <option value="other">Бусад</option>
+      </select>
+    </fieldset>
+ 
+    <center><button type="submit">Бүртгүүлэх</button></center>
+  </form>
+</main>
+ 
+<footer>
+  <p><center>2026 он</center></p>
+</footer>
+</html>
